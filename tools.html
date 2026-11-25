@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Creative Futures · Tools team sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,500;1,9..144,900&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a4a;--cream:#fbf5ea;--yellow:#ffc83d;--pink:#ff6a4d;--green:#b6da4c;--purple:#7a5cff;--sand:#f0e7d3}
+*{box-sizing:border-box;min-width:0}html{-webkit-text-size-adjust:100%}html,body{overflow-x:hidden;max-width:100%}
+body{margin:0;background:var(--cream);color:var(--navy);font-family:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;font-size:15px;line-height:1.45}
+.head{background:var(--navy);color:var(--cream);padding:0 0 28px;position:relative}
+.curtain{display:flex;height:16px;padding:0 2px}.curtain i{flex:1;height:16px;background:var(--pink);border-radius:0 0 50% 50%;margin-right:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.kicker{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--green);margin:22px 0 8px;text-transform:uppercase}
+h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(34px,7vw,56px);line-height:1;margin:0 0 10px;letter-spacing:-.01em}
+h1 em{font-style:italic;font-weight:500;color:var(--yellow)}
+.lead{max-width:620px;color:#dfe7ee;font-size:14px}
+.tickets{display:flex;flex-wrap:wrap;margin:18px -16px 0;background:var(--cream);color:var(--navy)}
+.tk{flex:1 1 150px;padding:12px 16px;border-right:2px dashed var(--navy)}.tk:last-child{border-right:0;background:var(--yellow)}
+.tk .l{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.18em;opacity:.75;text-transform:uppercase}
+.tk .v{font-family:'Fraunces',serif;font-weight:900;font-size:17px;line-height:1.1;margin-top:3px}
+.tk input{width:100%;border:0;border-bottom:2px solid var(--navy);background:transparent;font:inherit;font-family:'Fraunces',serif;font-weight:900;font-size:19px;color:var(--navy);padding:2px 0;outline:none}
+.pill{display:inline-block;font-weight:800;font-size:11px;padding:3px 10px;border-radius:20px;color:var(--navy);margin-right:6px}
+h2{font-family:'Fraunces',serif;font-weight:900;font-size:26px;margin:34px 0 6px;line-height:1.1}
+h2 em{font-style:italic;font-weight:500;color:var(--purple)}
+.sub{color:#4b5f72;margin:0 0 14px;font-size:14px}
+.card{background:#fff;border:1.5px solid rgba(11,42,74,.14);border-radius:14px;padding:18px 18px 14px;margin:0 0 14px;break-inside:avoid;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:7px;background:var(--acc,var(--yellow))}
+.card .n{font-family:'Fraunces',serif;font-weight:900;font-size:13px;color:var(--navy);background:var(--acc,var(--yellow));border-radius:20px;padding:2px 10px;display:inline-block;margin-right:8px}
+.card h3{font-family:'Fraunces',serif;font-weight:900;font-size:20px;margin:0 0 2px;display:inline}
+.card .tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#4b5f72;margin:4px 0 2px}
+.card .desc{font-size:13.5px;color:#4b5f72;margin:0 0 10px}
+.rate{display:flex;align-items:center;gap:6px 10px;flex-wrap:wrap;margin:8px 0}
+.rate .q{flex:0 0 100%;font-weight:600;font-size:14px}
+.scale{display:flex;gap:4px;flex:0 0 100%;width:100%}
+.scale b{flex:1 1 0;min-width:0;max-width:40px;height:30px;border-radius:50%;border:1.5px solid var(--navy);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;cursor:pointer;user-select:none;background:#fff}
+.scale b.on{background:var(--navy);color:var(--cream)}.scale b.lt{background:var(--sand)}
+.lab{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#4b5f72;margin:10px 0 4px}
+.note{min-height:56px;border:1.5px dashed rgba(11,42,74,.35);border-radius:10px;padding:8px 10px;font:inherit;font-size:14px;background:#fffdf7;outline:none;white-space:pre-wrap}
+.note:focus{border-style:solid;border-color:var(--purple)}.note:empty::before{content:attr(data-ph);color:#9aa7b3}
+.comp .rate .q{flex:0 0 100%;}.comp .rate{border-bottom:1px solid rgba(11,42,74,.08);padding:8px 0}
+.comp .rate .q small{display:block;font-weight:400;color:#4b5f72;font-size:12.5px}
+.bar{position:sticky;bottom:0;background:var(--navy);color:var(--cream);padding:12px 16px;display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:30px}
+.btn{font:inherit;font-weight:800;font-size:15px;padding:12px 20px;border-radius:30px;border:0;cursor:pointer;background:var(--yellow);color:var(--navy)}
+.btn.ghost{background:transparent;color:var(--cream);border:1.5px solid var(--cream)}
+.saved{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.foot{text-align:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;color:#4b5f72;padding:18px 16px 30px}
+.eu{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:8px}.eu .flag{width:30px;height:20px;background:#039;position:relative;border-radius:2px}.eu .flag i{position:absolute;width:3px;height:3px;background:#fc0;border-radius:50%;left:13.5px;top:8.5px;transform-origin:center}
+@media (min-width:700px){.rate .q{flex:0 0 200px}.scale{flex:1 1 0}.comp .rate .q{flex:0 0 300px}}
+@media print{@page{size:A4;margin:12mm}body{background:#fff;font-size:12px}.head{padding-bottom:14px}.bar,.hint{display:none!important}.card{box-shadow:none;margin-bottom:8px;padding:10px 12px 8px;break-inside:auto}.rate,.note,.lab,.card h3{break-inside:avoid}.comp{break-inside:avoid}.note{min-height:30px;border-style:solid;background:#fff}.scale b{max-width:22px;font-size:9px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}.tickets{margin:12px 0 0}h2{font-size:20px;margin:18px 0 4px}.card h3{font-size:16px}.tk input{border-bottom:0}}
+
+.f{display:block;width:100%;border:1.5px dashed rgba(11,42,74,.35);border-radius:10px;padding:8px 10px;font:inherit;font-size:14px;background:#fffdf7;outline:none;min-height:40px;white-space:pre-wrap}
+.f:focus{border-style:solid;border-color:var(--purple)}.f:empty::before{content:attr(data-ph);color:#9aa7b3}
+.grid2{display:grid;gap:10px}@media(min-width:700px){.grid2{grid-template-columns:1fr 1fr}}
+.chk{display:flex;gap:10px;align-items:flex-start;margin:6px 0;font-size:14px}.chk input{width:22px;height:22px;margin:0;accent-color:var(--navy);flex:0 0 22px}
+.tool{--acc:var(--yellow)}.tool.ai{--acc:var(--purple)}
+.steps{counter-reset:s}.steps .f{margin-bottom:6px}
+@media print{.f{min-height:26px;border-style:solid;background:#fff}.f:empty::before{content:""}.grid2{grid-template-columns:1fr 1fr}.chk input{width:14px;height:14px}}
+</style></head><body>
+<div class="head"><div class="curtain"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="wrap">
+<div class="kicker">Tools for Creative Futures · team sheet · Erasmus+ KA153-YOU</div>
+<h1>Tools <em>team sheet</em></h1>
+<p class="lead">Fill this sheet together on one phone or laptop while you test. It saves itself in this browser. When it is complete, press Download as PDF and upload the file to your team folder.</p>
+<div class="tickets"><div class="tk"><div class="l">Team</div><input data-key="team" placeholder="Team 1 to 5 and your area"></div><div class="tk"><div class="l">Countries</div><input data-key="countries" placeholder="e.g. GR, TR, ES"></div><div class="tk"><div class="l">Date</div><input data-key="date" placeholder="25 November 2026"></div></div>
+</div></div>
+<div class="wrap">
+<h2>The <em>needs</em></h2><p class="sub">Write these before the tools: what do the people in your area actually need, and what does a youth worker need to help them?</p>
+<div class="card" style="--acc:#b6da4c"><div class="lab">Need 1</div><div class="f" contenteditable="true" data-key="need1" data-ph="What do the young people or the youth worker need? One real example from your work..."></div><div class="lab">Need 2</div><div class="f" contenteditable="true" data-key="need2" data-ph="What do the young people or the youth worker need? One real example from your work..."></div><div class="lab">Need 3</div><div class="f" contenteditable="true" data-key="need3" data-ph="What do the young people or the youth worker need? One real example from your work..."></div></div>
+<h2>The <em>tools</em></h2><p class="sub">At least one digital tool and one AI tool. Every field filled; "not found" is an answer, an empty box is not.</p>
+<div class="grid2"><div class="card tool"><span class="n">Tool 1</span><h3>Digital tool</h3><div class="lab">Tool name</div><div class="f" contenteditable="true" data-key="t1_name" data-ph="..."></div><div class="lab">Web link (where to access it)</div><div class="f" contenteditable="true" data-key="t1_link" data-ph="https://..."></div><div class="lab">What it does in one sentence</div><div class="f" contenteditable="true" data-key="t1_does" data-ph="..."></div><div class="lab">Pricing model and price per month</div><div class="f" contenteditable="true" data-key="t1_price" data-ph="Free · Freemium · Open source · Paid, and the price for one person"></div><div class="lab">Non-profit or education discount</div><div class="f" contenteditable="true" data-key="t1_npo" data-ph="Yes with the percentage or free plan · No · Not found"></div><div class="lab">Age limit, data and privacy</div><div class="f" contenteditable="true" data-key="t1_age" data-ph="Minimum age in the terms, where data are stored, whether young people need an account, whether inputs train the AI"></div><div class="lab">Works on, offline / low data, accessibility</div><div class="f" contenteditable="true" data-key="t1_works" data-ph="Phone, laptop, both · offline mode or online only · screen reader, captions, plain language"></div><div class="lab">Basic guideline: how a beginner sets it up and uses it, in three steps</div><div class="steps"><div class="f" contenteditable="true" data-key="t1_step1" data-ph="Step 1..."></div><div class="f" contenteditable="true" data-key="t1_step2" data-ph="Step 2..."></div><div class="f" contenteditable="true" data-key="t1_step3" data-ph="Step 3..."></div></div><div class="lab">Creative Futures use: one concrete scenario</div><div class="f" contenteditable="true" data-key="t1_use" data-ph="Who it helps: a theatre group, a video crew, a youth council, a reflection circle..."></div><div class="lab">Our test: what we made, what worked, what went wrong</div><div class="f" contenteditable="true" data-key="t1_test" data-ph="..."></div><div class="lab">AI check: three honest lines</div><div class="f" contenteditable="true" data-key="t1_ai" data-ph="1. What it did well  2. What it got wrong or made up  3. What a youth worker must check before using it with young people"></div></div><div class="card tool ai"><span class="n">Tool 2</span><h3>AI tool</h3><div class="lab">Tool name</div><div class="f" contenteditable="true" data-key="t2_name" data-ph="..."></div><div class="lab">Web link (where to access it)</div><div class="f" contenteditable="true" data-key="t2_link" data-ph="https://..."></div><div class="lab">What it does in one sentence</div><div class="f" contenteditable="true" data-key="t2_does" data-ph="..."></div><div class="lab">Pricing model and price per month</div><div class="f" contenteditable="true" data-key="t2_price" data-ph="Free · Freemium · Open source · Paid, and the price for one person"></div><div class="lab">Non-profit or education discount</div><div class="f" contenteditable="true" data-key="t2_npo" data-ph="Yes with the percentage or free plan · No · Not found"></div><div class="lab">Age limit, data and privacy</div><div class="f" contenteditable="true" data-key="t2_age" data-ph="Minimum age in the terms, where data are stored, whether young people need an account, whether inputs train the AI"></div><div class="lab">Works on, offline / low data, accessibility</div><div class="f" contenteditable="true" data-key="t2_works" data-ph="Phone, laptop, both · offline mode or online only · screen reader, captions, plain language"></div><div class="lab">Basic guideline: how a beginner sets it up and uses it, in three steps</div><div class="steps"><div class="f" contenteditable="true" data-key="t2_step1" data-ph="Step 1..."></div><div class="f" contenteditable="true" data-key="t2_step2" data-ph="Step 2..."></div><div class="f" contenteditable="true" data-key="t2_step3" data-ph="Step 3..."></div></div><div class="lab">Creative Futures use: one concrete scenario</div><div class="f" contenteditable="true" data-key="t2_use" data-ph="Who it helps: a theatre group, a video crew, a youth council, a reflection circle..."></div><div class="lab">Our test: what we made, what worked, what went wrong</div><div class="f" contenteditable="true" data-key="t2_test" data-ph="..."></div><div class="lab">AI check: three honest lines</div><div class="f" contenteditable="true" data-key="t2_ai" data-ph="1. What it did well  2. What it got wrong or made up  3. What a youth worker must check before using it with young people"></div></div></div>
+<h2>Our <em>recommendations</em></h2>
+<div class="card" style="--acc:#ff6a4d">
+<div class="lab">The one tool for a youth centre with no budget, and why</div><div class="f" contenteditable="true" data-key="rec_free" data-ph="Tool and one sentence..."></div>
+<div class="lab">The one tool worth paying for, and why</div><div class="f" contenteditable="true" data-key="rec_paid" data-ph="Tool and one sentence..."></div>
+<div class="lab">One idea we will try in our own organisation</div><div class="f" contenteditable="true" data-key="rec_try" data-ph="..."></div>
+</div>
+<h2>Before you <em>upload</em></h2>
+<div class="card" style="--acc:#ffc83d"><label class="chk"><input type="checkbox" data-key="chk0"><span>Every link opens and goes to the tool, not to an ad.</span></label><label class="chk"><input type="checkbox" data-key="chk1"><span>Prices checked on the tool's own pricing page today.</span></label><label class="chk"><input type="checkbox" data-key="chk2"><span>One screenshot per tool from your own test, uploaded to the team folder.</span></label><label class="chk"><input type="checkbox" data-key="chk3"><span>No personal data of young people in screenshots or examples.</span></label><label class="chk"><input type="checkbox" data-key="chk4"><span>The no-budget and the worth-paying-for recommendations are filled in.</span></label><label class="chk"><input type="checkbox" data-key="chk5"><span>Team number, countries and date are at the top.</span></label></div>
+<p class="hint sub">This sheet stays on this device only. Download the PDF before you close the browser, and upload it to Daily Media › Day 4 › Tools for Creative Futures › your team.</p>
+</div>
+<div class="bar"><button class="btn" onclick="dl()">Download as PDF</button><button class="btn ghost" onclick="clr()">Clear sheet</button><span class="saved" id="sv">saved</span></div>
+<div class="foot">Creative Futures: Theatre, Tech &amp; European Participation · Amsterdam 2026 · Tool names are brands of their owners</div>
+<script>
+const K='cf_tools_sheet';let D={};try{D=JSON.parse(localStorage.getItem(K)||'{}')}catch(e){}
+function save(){try{localStorage.setItem(K,JSON.stringify(D));document.getElementById('sv').textContent='saved '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}catch(e){}}
+document.querySelectorAll('[contenteditable]').forEach(el=>{const k=el.dataset.key;if(D[k])el.textContent=D[k];el.oninput=()=>{D[k]=el.textContent;save()}});
+document.querySelectorAll('input[type=text],input:not([type])').forEach(el=>{const k=el.dataset.key;if(D[k])el.value=D[k];el.oninput=()=>{D[k]=el.value;save()}});
+document.querySelectorAll('input[type=checkbox]').forEach(el=>{const k=el.dataset.key;el.checked=!!D[k];el.onchange=()=>{D[k]=el.checked;save()}});
+function dl(){document.title='Creative Futures - Tools - '+(D.team||'team sheet');window.print()}
+function clr(){if(confirm('Delete everything on this sheet on this device?')){D={};localStorage.removeItem(K);location.reload()}}
+</script></body></html>
