@@ -147,6 +147,6 @@ idx='''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="vi
 <a class="day" href="day2.html"><div class="card" style="--acc:#ffc83d"><span class="n">Day 2</span><h3>Theatre &amp; Storytelling</h3><div class="tag">Tuesday 24 November</div></div></a>
 <a class="day" href="day3.html"><div class="card" style="--acc:#7a5cff"><span class="n">Day 3</span><h3>Digital Awareness</h3><div class="tag">Wednesday 25 November</div></div></a>
 <a class="day" href="day4.html"><div class="card" style="--acc:#ff6a4d"><span class="n">Day 4</span><h3>Wellbeing &amp; Inclusion</h3><div class="tag">Thursday 26 November</div></div></a>
-<div class="card soon" style="--acc:#9ad5ff"><span class="n">Day 5</span><h3>Action &amp; Closing · Personal plan</h3><div class="tag">Friday 27 November · coming</div></div>
+<a class="day" href="plan.html"><div class="card" style="--acc:#9ad5ff"><span class="n">Plan</span><h3>Personal Action Plan</h3><div class="tag">Friday 27 November · what I take home</div></div></a>
 </div></div><div class="foot">Creative Futures: Theatre, Tech &amp; European Participation · Amsterdam 2026</div></body></html>'''
 open('index.html','w').write(idx); print('ok')
