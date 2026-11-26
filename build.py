@@ -17,6 +17,19 @@ DAYS = {
   (3,"Colombian Hypnosis","Theatre exercise (Boal)","Follow your partner's hand with your face; lead, follow, then one leader and two followers."),
   (4,"Forum Theatre","Theatre of the Oppressed","A play with a bad ending, replayed while another team shouts Stop! and changes it."),
  ]),
+ "day3": dict(n=3, date="Wednesday 25 November 2026", scene="Scene 4 · Digital Awareness", title="Digital Awareness", acts=[
+  ("E","Walk, Stop, Jump, Clap","Energiser","Walk on walk, stop on stop, then the commands switch places and the brain has to catch up."),
+  ("E","Hee-Haa-Hoo","Energiser","Pass the energy around the circle: hee over the head, haa to the side, hoo through the middle."),
+  (1,"AI SWOT Analysis","Team research","Four teams, four letters: strengths, weaknesses, opportunities and threats of AI in youth work, one matrix and three rules."),
+  (2,"Creative Lab: Digital Storytelling","Absolute Cinema film challenge","One short film and two viral shorts per crew on one of the five intentions of the project."),
+ ]),
+ "day4": dict(n=4, date="Thursday 26 November 2026", scene="Scene 5 · Wellbeing &amp; Inclusion", title="Wellbeing &amp; Inclusion", acts=[
+  ("E","Just Dance: Rasputin","Energiser","The whole room follows the dance on the screen; nobody is allowed to be good at it."),
+  (1,"Emotional Intelligence and Group Dynamics","Team presentation","The five parts of emotional intelligence, the stages of a group, roles people take, and one exercise plan."),
+  (2,"Conflict Transformation and Communication","Team presentation","Resolving versus transforming conflict, active listening, I-messages, non-violent communication, and one exercise plan."),
+  (3,"Safe and Inclusive Learning Environments","Team presentation","What makes a space safe, a group agreement young people write themselves, inclusion in practice, and one exercise plan."),
+  (4,"Mindfulness and Wellbeing for Youth Workers","Team presentation","Why youth workers burn out, five short practices, digital wellbeing, and one practice plan."),
+ ]),
 }
 COMP = [
  ("Multilingual","Communicating in English and other languages, understanding each other across cultures"),
@@ -132,8 +145,8 @@ idx='''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="vi
 <div class="wrap"><div class="days">
 <a class="day" href="day1.html"><div class="card" style="--acc:#b6da4c"><span class="n">Day 1</span><h3>Foundations</h3><div class="tag">Monday 23 November</div></div></a>
 <a class="day" href="day2.html"><div class="card" style="--acc:#ffc83d"><span class="n">Day 2</span><h3>Theatre &amp; Storytelling</h3><div class="tag">Tuesday 24 November</div></div></a>
-<div class="card soon" style="--acc:#7a5cff"><span class="n">Day 3</span><h3>Digital Awareness</h3><div class="tag">Wednesday 25 November · coming</div></div>
-<div class="card soon" style="--acc:#ff6a4d"><span class="n">Day 4</span><h3>Wellbeing &amp; Inclusion</h3><div class="tag">Thursday 26 November · coming</div></div>
+<a class="day" href="day3.html"><div class="card" style="--acc:#7a5cff"><span class="n">Day 3</span><h3>Digital Awareness</h3><div class="tag">Wednesday 25 November</div></div></a>
+<a class="day" href="day4.html"><div class="card" style="--acc:#ff6a4d"><span class="n">Day 4</span><h3>Wellbeing &amp; Inclusion</h3><div class="tag">Thursday 26 November</div></div></a>
 <div class="card soon" style="--acc:#9ad5ff"><span class="n">Day 5</span><h3>Action &amp; Closing · Personal plan</h3><div class="tag">Friday 27 November · coming</div></div>
 </div></div><div class="foot">Creative Futures: Theatre, Tech &amp; European Participation · Amsterdam 2026</div></body></html>'''
 open('index.html','w').write(idx); print('ok')
